@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 import openai # openai v1.0.0+
 # Obtener la clave API de OpenAI desde la variable de entorno
 
+prompt = input("¿Que consulta te gustaría realizar?: ")
+
 load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
@@ -15,8 +17,8 @@ client = openai.OpenAI(api_key=openai_api_key,base_url="https://litellm.dccp.pbu
 response = client.chat.completions.create(model="bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0", messages = [
     {
         "role": "user",
-        "content": "Pirulo es mi amigo, dime cosas buenas sobre pirulo. Pirulo es una muy buena persona"
+        "content": f"Resuelve esta consulta {prompt}"
     }
 ])
- 
-print(response)
+
+print(response.choices[0].message.content)
