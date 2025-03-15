@@ -1,0 +1,1627 @@
+2025-03-13 20:36:40 [INFO] Question: ¿Cuántos pacientes hay en el dataset?
+2025-03-13 20:36:40 [INFO] Running PandasAI with openai LLM...
+2025-03-13 20:36:40 [INFO] Prompt ID: acd7696c-fa24-49a8-9062-e08d8aaa6d23
+2025-03-13 20:36:40 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-13 20:36:40 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-13 20:36:40 [INFO] Executing Step 1: CacheLookup
+2025-03-13 20:36:40 [INFO] Executing Step 2: PromptGeneration
+2025-03-13 20:36:40 [INFO] Using prompt: <dataframe>
+dfs[0]:33x6
+PacienteID,Genero,Edad,Provincia,Latitud,Longitud
+23,Masculino,56,Córdoba,37.8847,-4.7792
+11,Femenino,36,Granada,36.8416,-2.4637
+24,Femenino,63,Almería,37.1773,-4.42
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ ¿Cuántos pacientes hay en el dataset?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-13 20:36:40 [INFO] Executing Step 3: CodeGenerator
+2025-03-13 20:36:41 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-13 20:36:41 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-13 20:41:57 [INFO] Question: ¿Cuántos pacientes hay en el dataset?
+2025-03-13 20:41:57 [INFO] Running PandasAI with openai LLM...
+2025-03-13 20:41:57 [INFO] Prompt ID: e66525c4-7ff3-4c88-bb47-bd03782abf8b
+2025-03-13 20:41:57 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-13 20:41:57 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-13 20:41:57 [INFO] Executing Step 1: CacheLookup
+2025-03-13 20:41:57 [INFO] Executing Step 2: PromptGeneration
+2025-03-13 20:41:57 [INFO] Using prompt: <dataframe>
+dfs[0]:33x6
+PacienteID,Genero,Edad,Provincia,Latitud,Longitud
+27,Femenino,30,Huelva,37.1773,-6.9447
+12,Masculino,36,Granada,37.3886,-3.5986
+16,Masculino,47,Córdoba,37.2614,-4.7792
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ ¿Cuántos pacientes hay en el dataset?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-13 20:41:57 [INFO] Executing Step 3: CodeGenerator
+2025-03-13 20:41:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-13 20:41:57 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-13 20:43:50 [INFO] Question: ¿Cuántos pacientes hay en el dataset?
+2025-03-13 20:43:50 [INFO] Running PandasAI with openai LLM...
+2025-03-13 20:43:50 [INFO] Prompt ID: a1c2874c-747f-44e2-bee7-4e064cbafb37
+2025-03-13 20:43:50 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-13 20:43:50 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-13 20:43:50 [INFO] Executing Step 1: CacheLookup
+2025-03-13 20:43:50 [INFO] Executing Step 2: PromptGeneration
+2025-03-13 20:43:50 [INFO] Using prompt: <dataframe>
+dfs[0]:33x6
+PacienteID,Genero,Edad,Provincia,Latitud,Longitud
+23,Femenino,78,Almería,37.3886,-5.9823
+32,Femenino,63,Sevilla,37.8847,-6.9447
+10,Masculino,71,Málaga,37.1773,-3.5986
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ ¿Cuántos pacientes hay en el dataset?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-13 20:43:50 [INFO] Executing Step 3: CodeGenerator
+2025-03-13 20:43:51 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-13 20:43:51 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-13 20:44:19 [INFO] Question: ¿Cuántos pacientes hay en el dataset?
+2025-03-13 20:44:19 [INFO] Running PandasAI with openai LLM...
+2025-03-13 20:44:19 [INFO] Prompt ID: 8d9041f2-ad88-437f-84aa-317124a1eed2
+2025-03-13 20:44:19 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-13 20:44:19 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-13 20:44:19 [INFO] Executing Step 1: CacheLookup
+2025-03-13 20:44:19 [INFO] Executing Step 2: PromptGeneration
+2025-03-13 20:44:19 [INFO] Using prompt: <dataframe>
+dfs[0]:33x6
+PacienteID,Genero,Edad,Provincia,Latitud,Longitud
+20,Femenino,41,Granada,36.7194,-6.9447
+15,Masculino,50,Sevilla,37.1773,-5.9823
+11,Femenino,28,Málaga,37.3886,-3.5986
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ ¿Cuántos pacientes hay en el dataset?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-13 20:44:19 [INFO] Executing Step 3: CodeGenerator
+2025-03-13 20:44:20 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-13 20:44:20 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 12:00:12 [INFO] Question: ¿Que información almacenas?
+2025-03-14 12:00:12 [INFO] Running PandasAI with openai LLM...
+2025-03-14 12:00:12 [INFO] Prompt ID: fcbb3e14-6aa5-49bf-b837-1e8877fef170
+2025-03-14 12:00:12 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 12:00:12 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 12:00:12 [INFO] Executing Step 1: CacheLookup
+2025-03-14 12:00:12 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 12:00:12 [INFO] Using prompt: <dataframe>
+dfs[0]:545x19
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion,Fecha_inicio,Fecha_fin,Tipo_encuentro,Fecha de inicio,Fecha de fin,Código,Nombre,Dosis,Frecuencia,Vía de administración,Genero,Edad,Provincia,Latitud,Longitud
+19,,C0042109,Neumonía,2023-10-25,,,2012-06-02,2022-11-24,,Entacapona,,1 vez cada 2 semanas,inyección,,30.0,Almería,37.3886,-4.7792
+1,2022-01-06,,Asma,2023-09-11 10:18:27.267949,2023-06-16 00:00:00.000000,Atención Primaria,2021-09-10,2012-12-31,G04BD04,Clopidogrel,0.05%,cada 6 horas si es necesario,tópica,Femenino,,,37.2614,
+31,2021-08-06,241879003,,,2023-12-16 00:00:00.000000,Urgencia,,,R03AC02,,0.4 mg,,,Masculino,47.0,Málaga,,-6.9447
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ ¿Que información almacenas?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 12:00:12 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 12:00:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 12:00:13 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 12:01:58 [INFO] Question: ¿Que información almacenas?
+2025-03-14 12:01:59 [INFO] Running PandasAI with openai LLM...
+2025-03-14 12:01:59 [INFO] Prompt ID: 76ffa512-3f53-41af-92c6-4d8a0f13bea9
+2025-03-14 12:01:59 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 12:01:59 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 12:01:59 [INFO] Executing Step 1: CacheLookup
+2025-03-14 12:01:59 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 12:01:59 [INFO] Using prompt: <dataframe>
+dfs[0]:545x19
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion,Fecha_inicio,Fecha_fin,Tipo_encuentro,Fecha de inicio,Fecha de fin,Código,Nombre,Dosis,Frecuencia,Vía de administración,Genero,Edad,Provincia,Latitud,Longitud
+2,2017-03-06,,,,2025-02-10 00:00:00.000000,Hospitalización,,2016-12-01,,Paroxetina,,según necesidad,,Masculino,28.0,Málaga,37.2614,
+13,2019-12-13,241879003,Fractura de brazo,2024-11-19,,Atención Primaria,2012-06-01,2023-06-05,H03AA01,,1000 mcg,1 vez cada 3 semanas,inhalación,Femenino,,Huelva,36.7194,-4.7792
+37,,C0020538,Alergia a los frutos secos,2024-02-10,2024-11-18,,2017-07-01,,D05AX02,Orlistat,200 mg,,inyección,,19.0,,,-4.42
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ ¿Que información almacenas?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 12:01:59 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 12:01:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 12:01:59 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 12:04:53 [INFO] Question: dime el país más feliz junto a su gdp
+2025-03-14 12:04:53 [INFO] Running PandasAI with openai LLM...
+2025-03-14 12:04:53 [INFO] Prompt ID: 4fdfeb99-b6e9-4fb4-a376-8f977d9b23ff
+2025-03-14 12:04:53 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 12:04:53 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 12:04:53 [INFO] Executing Step 1: CacheLookup
+2025-03-14 12:04:53 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 12:04:53 [INFO] Using prompt: <dataframe>
+dfs[0]:10x3
+country,gdp,happiness_index
+Spain,8192940707,7.16
+Germany,2787830884,6.38
+France,2693588292,7.23
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ dime el país más feliz junto a su gdp
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 12:04:53 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 12:04:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 12:04:54 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 12:07:33 [INFO] Question: Dame el PacienteID cuya provincia sea Huelva
+2025-03-14 12:07:33 [INFO] Running PandasAI with openai LLM...
+2025-03-14 12:07:33 [INFO] Prompt ID: cb63bdd6-f063-4244-993a-402e776010cc
+2025-03-14 12:07:33 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 12:07:33 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 12:07:33 [INFO] Executing Step 1: CacheLookup
+2025-03-14 12:07:33 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 12:07:33 [INFO] Using prompt: <dataframe>
+dfs[0]:545x19
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion,Fecha_inicio,Fecha_fin,Tipo_encuentro,Fecha de inicio,Fecha de fin,Código,Nombre,Dosis,Frecuencia,Vía de administración,Genero,Edad,Provincia,Latitud,Longitud
+35,2018-03-06,,,2023-10-15 10:18:27.267949,,,,2020-08-15,R03DX07,,0.5%,2 veces al día,,Femenino,71.0,Córdoba,37.2614,
+26,,233604007,Hipertensión,,2023-07-17,Hospitalización,2020-01-10,,M04AA01,Azatioprina,10 mg,3 veces al día,oral,,,Huelva,,-6.9447
+19,2015-09-26,C0011849,Alergia al polen,2024-12-21,2024-10-19,Atención Primaria,2019-08-15,2023-06-05,,Melatonina,,,intranasal,Masculino,44.0,,37.8847,-5.9823
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Dame el PacienteID cuya provincia sea Huelva
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 12:07:33 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 12:07:34 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 12:07:34 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 12:09:51 [INFO] Question: pacientes de huelva
+2025-03-14 12:09:51 [INFO] Running PandasAI with openai LLM...
+2025-03-14 12:09:51 [INFO] Prompt ID: eb78a04a-cdc3-4b76-b688-08592713c139
+2025-03-14 12:09:51 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 12:09:51 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 12:09:51 [INFO] Executing Step 1: CacheLookup
+2025-03-14 12:09:51 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 12:09:51 [INFO] Using prompt: <dataframe>
+dfs[0]:545x19
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion,Fecha_inicio,Fecha_fin,Tipo_encuentro,Fecha de inicio,Fecha de fin,Código,Nombre,Dosis,Frecuencia,Vía de administración,Genero,Edad,Provincia,Latitud,Longitud
+8,,,,2023-10-06 10:18:27.267949,2023-04-25,Hospitalización,,,L04AX01,Azatioprina,10 UI,según necesidad,oral,Femenino,,Córdoba,,-6.9447
+29,2015-12-29,48387007.0,Alergia a la penicilina,2023-05-28 00:00:00.000000,2024-06-11,Atención Primaria,2019-07-02,2019-07-01,,,18 mcg,cada 6 horas si es necesario,inyección,,63.0,Almería,36.8416,-3.5986
+10,2017-12-15,233604007.0,Cirugía de apendicitis,,,,2021-02-01,2016-12-01,N04BA02,Levodopa/Carbidopa,,,,Masculino,19.0,,37.8847,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ pacientes de huelva
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 12:09:51 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 12:09:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 12:09:52 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 12:13:28 [INFO] Question: Dime el gdp de los 3 paises más felices
+2025-03-14 12:13:28 [INFO] Running PandasAI with openai LLM...
+2025-03-14 12:13:28 [INFO] Prompt ID: 20fd337c-8a61-4cd0-a953-933b5b764b1f
+2025-03-14 12:13:28 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 12:13:28 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 12:13:28 [INFO] Executing Step 1: CacheLookup
+2025-03-14 12:13:28 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 12:13:28 [INFO] Using prompt: <dataframe>
+dfs[0]:10x3
+country,gdp,happiness_index
+United States,2224132166,6.4
+France,4884208647,7.22
+United Kingdom,1129099535,5.12
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Dime el gdp de los 3 paises más felices
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 12:13:28 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 12:13:28 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 12:13:28 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 12:15:57 [INFO] Question: dame el gdp del país más feliz
+2025-03-14 12:15:57 [INFO] Running PandasAI with openai LLM...
+2025-03-14 12:15:57 [INFO] Prompt ID: d3c8db91-37cc-4a06-9bd4-e0fc4863c025
+2025-03-14 12:15:57 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 12:15:57 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 12:15:57 [INFO] Executing Step 1: CacheLookup
+2025-03-14 12:15:57 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 12:15:57 [INFO] Using prompt: <dataframe>
+dfs[0]:10x3
+country,gdp,happiness_index
+Canada,5071282097,6.66
+United Kingdom,1506109047,6.38
+China,5574649203,5.12
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ dame el gdp del país más feliz
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 12:15:57 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 12:15:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 12:15:58 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 12:16:09 [INFO] Question: dame el gdp del pais mas feliz
+2025-03-14 12:16:09 [INFO] Running PandasAI with openai LLM...
+2025-03-14 12:16:09 [INFO] Prompt ID: 58e2deb4-81a4-4643-ba80-6a69e70cb017
+2025-03-14 12:16:09 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 12:16:09 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 12:16:09 [INFO] Executing Step 1: CacheLookup
+2025-03-14 12:16:09 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 12:16:09 [INFO] Using prompt: <dataframe>
+dfs[0]:10x3
+country,gdp,happiness_index
+Italy,6173024262,7.22
+Australia,8317477553,5.87
+United Kingdom,8723946653,6.94
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ dame el gdp del pais mas feliz
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 12:16:09 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 12:16:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 12:16:10 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 12:24:38 [INFO] Question: Describe el contenido del DataFrame
+2025-03-14 12:24:38 [INFO] Running PandasAI with openai LLM...
+2025-03-14 12:24:38 [INFO] Prompt ID: 3c738726-6f06-48f6-88d8-3583445d5bae
+2025-03-14 12:24:38 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 12:24:38 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 12:24:38 [INFO] Executing Step 1: CacheLookup
+2025-03-14 12:24:38 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 12:24:38 [INFO] Using prompt: <dataframe>
+dfs[0]:100x4
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion
+23,2022-04-08,300913006,Alergia al látex
+21,2021-04-25,91931005,Alergia a la picadura de abeja
+10,2020-01-09,91933007,Alergia a la penicilina
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Describe el contenido del DataFrame
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 12:24:38 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 12:24:39 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 12:24:39 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 12:27:46 [INFO] Question: dime las personas que sean intolerantes a la lactosa
+2025-03-14 12:27:47 [INFO] Running PandasAI with openai LLM...
+2025-03-14 12:27:47 [INFO] Prompt ID: d47a8564-0730-4fad-a11a-c1cf2ef72cc1
+2025-03-14 12:27:47 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 12:27:47 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 12:27:47 [INFO] Executing Step 1: CacheLookup
+2025-03-14 12:27:47 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 12:27:47 [INFO] Using prompt: <dataframe>
+dfs[0]:545x19
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion,Fecha_inicio,Fecha_fin,Tipo_encuentro,Fecha de inicio,Fecha de fin,Código,Nombre,Dosis,Frecuencia,Vía de administración,Genero,Edad,Provincia,Latitud,Longitud
+22,2015-09-26,91936005.0,Electrocardiograma,2023-07-03,,Urgencia,2018-06-01,,P01BA02,Insulina detemir,100 mg,cada 6 horas si es necesario,intranasal,,41.0,,37.2614,-5.9823
+39,2017-03-06,,Resonancia magnética cerebral,,2025-02-08 00:00:00.000000,,,2019-06-01,C01BD01,Montelukast,10 mg,4 veces al día,tópica,Femenino,36.0,Almería,36.7194,-6.9447
+29,,399439001.0,,2024-06-15 00:00:00.000000,2024-11-28,Hospitalización,2021-02-01,2020-07-01,,,,,,Masculino,,Granada,,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ dime las personas que sean intolerantes a la lactosa
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 12:27:47 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 12:27:47 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 12:27:47 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 12:32:30 [INFO] Question: ¿Hay personas que son intolerantes a la lactosa?
+2025-03-14 12:32:30 [INFO] Running PandasAI with openai LLM...
+2025-03-14 12:32:30 [INFO] Prompt ID: cd9805ba-b2c3-4427-8c05-2c3b643e8cb6
+2025-03-14 12:32:30 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 12:32:30 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 12:32:30 [INFO] Executing Step 1: CacheLookup
+2025-03-14 12:32:30 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 12:32:30 [INFO] Using prompt: <dataframe>
+dfs[0]:545x19
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion,Fecha_inicio,Fecha_fin,Tipo_encuentro,Fecha de inicio,Fecha de fin,Código,Nombre,Dosis,Frecuencia,Vía de administración,Genero,Edad,Provincia,Latitud,Longitud
+30,,80146002.0,Alergia al polen,2023-12-12 10:18:27.267949,,,2021-06-01,,G04CB01,,,1 vez al día,intranasal,,19.0,Córdoba,37.8847,-5.9823
+15,2019-01-23,,,2024-03-03,2024-07-28,Hospitalización,,2019-06-01,B03XA01,Metamizol,100/25 mg,1 vez cada 2 semanas,,Masculino,47.0,Huelva,,-2.4637
+4,2019-07-21,303893007.0,Radiografía de tórax,,2025-03-09,Urgencia,2020-07-01,2021-04-14,,Claritromicina,25 mg,,inhalación,Femenino,,,37.3886,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ ¿Hay personas que son intolerantes a la lactosa?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 12:32:30 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 12:32:31 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 12:32:31 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 12:33:15 [INFO] Question: lista paises por su gdp
+2025-03-14 12:33:15 [INFO] Running PandasAI with openai LLM...
+2025-03-14 12:33:15 [INFO] Prompt ID: 65925e4f-d3d9-41ba-aac1-636981e0b06d
+2025-03-14 12:33:15 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 12:33:15 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 12:33:15 [INFO] Executing Step 1: CacheLookup
+2025-03-14 12:33:15 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 12:33:15 [INFO] Using prompt: <dataframe>
+dfs[0]:10x3
+country,gdp,happiness_index
+Italy,9292590135,7.16
+China,9905591926,7.23
+Australia,7249154264,5.87
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ lista paises por su gdp
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 12:33:15 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 12:33:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 12:33:16 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 19:13:00 [INFO] Question: dame el gdp del país más feliz
+2025-03-14 19:13:01 [INFO] Running PandasAI with openai LLM...
+2025-03-14 19:13:01 [INFO] Prompt ID: 31cdbbfb-618e-49a1-b738-1236d8807af5
+2025-03-14 19:13:01 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 19:13:01 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 19:13:01 [INFO] Executing Step 1: CacheLookup
+2025-03-14 19:13:01 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 19:13:01 [INFO] Using prompt: <dataframe>
+dfs[0]:10x3
+country,gdp,happiness_index
+Japan,8986868620,5.87
+Italy,3897488897,7.07
+Germany,2263926052,6.66
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ dame el gdp del país más feliz
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 19:13:01 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 19:13:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 19:13:01 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 19:13:28 [INFO] Question: dime el gdp del país más feliz
+2025-03-14 19:13:28 [INFO] Running PandasAI with openai LLM...
+2025-03-14 19:13:28 [INFO] Prompt ID: 6bcbe632-2be4-49ef-b783-9b440ff98712
+2025-03-14 19:13:28 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 19:13:28 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 19:13:28 [INFO] Executing Step 1: CacheLookup
+2025-03-14 19:13:28 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 19:13:28 [INFO] Using prompt: <dataframe>
+dfs[0]:10x3
+country,gdp,happiness_index
+Australia,6284085703,6.66
+Spain,3442935385,7.16
+Canada,8741213669,5.12
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ dime el gdp del país más feliz
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 19:13:28 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 19:13:28 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 19:13:28 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 19:16:09 [INFO] Question: dime el gdp de los paises más felices
+2025-03-14 19:16:09 [INFO] Running PandasAI with openai LLM...
+2025-03-14 19:16:09 [INFO] Prompt ID: 788c19ab-b5d8-4a52-bf6f-a25cb08f0f67
+2025-03-14 19:16:09 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 19:16:09 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 19:16:09 [INFO] Executing Step 1: CacheLookup
+2025-03-14 19:16:09 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 19:16:09 [INFO] Using prompt: <dataframe>
+dfs[0]:10x3
+country,gdp,happiness_index
+Germany,7508704557,7.23
+Italy,3419016999,7.16
+China,3601878258,6.66
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ dime el gdp de los paises más felices
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 19:16:09 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 19:16:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 19:16:09 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-14 19:16:29 [INFO] Question: Holaaaaaaaaaa
+2025-03-14 19:16:30 [INFO] Running PandasAI with openai LLM...
+2025-03-14 19:16:30 [INFO] Prompt ID: 05d088ea-2991-4d6c-9f85-d502d75362ba
+2025-03-14 19:16:30 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-14 19:16:30 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-14 19:16:30 [INFO] Executing Step 1: CacheLookup
+2025-03-14 19:16:30 [INFO] Executing Step 2: PromptGeneration
+2025-03-14 19:16:30 [INFO] Using prompt: <dataframe>
+dfs[0]:10x3
+country,gdp,happiness_index
+China,19294482071552,7.16
+United Kingdom,1490967855104,5.12
+Spain,1745433788416,7.23
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Holaaaaaaaaaa
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-14 19:16:30 [INFO] Executing Step 3: CodeGenerator
+2025-03-14 19:16:30 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-14 19:16:30 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-15 14:42:59 [INFO] Question: dime el país más feliz
+2025-03-15 14:42:59 [INFO] Running PandasAI with openai LLM...
+2025-03-15 14:42:59 [INFO] Prompt ID: 226dbb74-e649-4a75-a251-52961ea59b6f
+2025-03-15 14:42:59 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 14:42:59 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 14:42:59 [INFO] Executing Step 1: CacheLookup
+2025-03-15 14:42:59 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 14:43:00 [INFO] Using prompt: <dataframe>
+dfs[0]:10x3
+country,gdp,happiness_index
+United States,9973323066,6.4
+Germany,1080893722,6.66
+United Kingdom,0245415735,5.12
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ dime el país más feliz
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 14:43:00 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 14:43:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-15 14:43:00 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-15 16:22:17 [INFO] Question: ¿Qué personas tienen diabetes?
+2025-03-15 16:22:17 [INFO] Running PandasAI with openai LLM...
+2025-03-15 16:22:17 [INFO] Prompt ID: 5aeb5543-adf9-43c2-9038-f6fb0b8d8a94
+2025-03-15 16:22:17 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 16:22:17 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 16:22:17 [INFO] Executing Step 1: CacheLookup
+2025-03-15 16:22:17 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 16:22:17 [INFO] Using prompt: <dataframe>
+dfs[0]:545x19
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion,Fecha_inicio,Fecha_fin,Tipo_encuentro,Fecha de inicio,Fecha de fin,Código,Nombre,Dosis,Frecuencia,Vía de administración,Genero,Edad,Provincia,Latitud,Longitud
+33,2017-02-06,C0011849,Electrocardiograma,2024-01-23 10:18:27.267949,,,,2022-04-10,,Montelukast,80 mg,4 veces al día,inyección,,56.0,Sevilla,37.2614,
+41,,80146002,,,2023-09-15,Urgencia,2019-03-01,2019-06-01,R03BA05,,,,oral,Masculino,,,36.7194,-4.7792
+8,2017-07-25,,Diabetes tipo 2,2023-06-27 10:18:27.267949,2023-05-14,Hospitalización,2015-09-15,,M01AE02,Amlodipino,1 mg,1 vez al mes,,Femenino,38.0,Granada,,-5.9823
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ ¿Qué personas tienen diabetes?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 16:22:17 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 16:22:18 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-15 16:22:18 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-15 16:22:33 [INFO] Question: ¿Qué personas tienen diabetes?
+2025-03-15 16:22:33 [INFO] Running PandasAI with openai LLM...
+2025-03-15 16:22:33 [INFO] Prompt ID: b2336d9e-6d5d-4be4-8fa4-2367679ca309
+2025-03-15 16:22:33 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 16:22:33 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 16:22:33 [INFO] Executing Step 1: CacheLookup
+2025-03-15 16:22:33 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 16:22:33 [INFO] Using prompt: <dataframe>
+dfs[0]:545x19
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion,Fecha_inicio,Fecha_fin,Tipo_encuentro,Fecha de inicio,Fecha de fin,Código,Nombre,Dosis,Frecuencia,Vía de administración,Genero,Edad,Provincia,Latitud,Longitud
+33,2017-02-06,C0011849,Electrocardiograma,2024-01-23 10:18:27.267949,,,,2022-04-10,,Montelukast,80 mg,4 veces al día,inyección,,56.0,Sevilla,37.2614,
+41,,80146002,,,2023-09-15,Urgencia,2019-03-01,2019-06-01,R03BA05,,,,oral,Masculino,,,36.7194,-4.7792
+8,2017-07-25,,Diabetes tipo 2,2023-06-27 10:18:27.267949,2023-05-14,Hospitalización,2015-09-15,,M01AE02,Amlodipino,1 mg,1 vez al mes,,Femenino,38.0,Granada,,-5.9823
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ ¿Qué personas tienen diabetes?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 16:22:33 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 16:22:34 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-15 16:22:34 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-15 16:22:52 [INFO] Question: ¿Qué personas tienen diabetes?
+2025-03-15 16:22:52 [INFO] Running PandasAI with openai LLM...
+2025-03-15 16:22:52 [INFO] Prompt ID: 9f10c55c-629d-4704-89db-ca76e5ae291b
+2025-03-15 16:22:52 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 16:22:52 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 16:22:52 [INFO] Executing Step 1: CacheLookup
+2025-03-15 16:22:52 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 16:22:52 [INFO] Using prompt: <dataframe>
+dfs[0]:545x19
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion,Fecha_inicio,Fecha_fin,Tipo_encuentro,Fecha de inicio,Fecha de fin,Código,Nombre,Dosis,Frecuencia,Vía de administración,Genero,Edad,Provincia,Latitud,Longitud
+40,,387713003.0,Alergia a los ácaros del polvo,,,Urgencia,2018-09-10,2020-05-01,C09AA03,,75 mg,,,Femenino,30.0,,37.8847,-4.42
+26,2022-05-10,,,2024-04-03,2025-03-09,Atención Primaria,,,,Domperidona,2.5 mg,4 veces al día,tópica,,56.0,Málaga,37.3886,-2.4637
+21,2020-11-03,399439001.0,Extracción de muela,2024-01-06 00:00:00.000000,2023-12-16,,2016-09-15,2016-09-15,L04AA06,Tiamazol,,cada 6 horas si es necesario,inyección,Masculino,,Córdoba,,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ ¿Qué personas tienen diabetes?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 16:22:52 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 16:22:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-15 16:22:53 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-15 16:26:57 [INFO] Question: Describe el contenido del DataFrame
+2025-03-15 16:26:57 [INFO] Running PandasAI with openai LLM...
+2025-03-15 16:26:57 [INFO] Prompt ID: b7a1a3ee-b504-4642-a9c9-e1fbf24f9e7f
+2025-03-15 16:26:57 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 16:26:57 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 16:26:57 [INFO] Executing Step 1: CacheLookup
+2025-03-15 16:26:57 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 16:26:57 [INFO] Using prompt: <dataframe>
+dfs[0]:100x4
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion
+1,2019-04-19,91930004,Alergia al pelo de gato
+23,2019-07-21,91931005,Alergia al látex
+20,2022-03-26,91932006,Alergia a los frutos secos
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Describe el contenido del DataFrame
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 16:26:57 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 16:26:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-15 16:26:58 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-15 16:30:36 [INFO] Question: Describe el contenido del DataFrame
+2025-03-15 16:30:37 [INFO] Running PandasAI with openai LLM...
+2025-03-15 16:30:37 [INFO] Prompt ID: 817a81a3-13d3-40a9-b259-cf6323edb50d
+2025-03-15 16:30:37 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 16:30:37 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 16:30:37 [INFO] Executing Step 1: CacheLookup
+2025-03-15 16:30:37 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 16:30:37 [INFO] Using prompt: <dataframe>
+dfs[0]:100x4
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion
+23,2015-12-29,300913006,Alergia a la penicilina
+27,2021-06-15,300914000,Alergia al polen
+2,2016-02-21,91932006,Alergia a la aspirina
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Describe el contenido del DataFrame
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 16:30:37 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 16:30:37 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-15 16:30:37 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-15 16:46:06 [INFO] Question: ¿Que alergia es la mas comun?
+2025-03-15 16:46:06 [INFO] Running PandasAI with openai LLM...
+2025-03-15 16:46:06 [INFO] Prompt ID: e86c1900-c508-4009-8e47-df2300c17a0b
+2025-03-15 16:46:06 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 16:46:06 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 16:46:06 [INFO] Executing Step 1: CacheLookup
+2025-03-15 16:46:06 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 16:46:06 [INFO] Using prompt: <dataframe>
+dfs[0]:100x4
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion
+6,2020-08-20,91933007,Alergia al pelo de gato
+2,2015-09-09,91934008,Alergia a los ácaros del polvo
+8,2016-09-03,91932006,Alergia a la penicilina
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ ¿Que alergia es la mas comun?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 16:46:06 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 16:46:06 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-15 16:46:06 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-15 16:54:52 [INFO] Question: dime la alergia más comun
+2025-03-15 16:54:52 [INFO] Running PandasAI with openai LLM...
+2025-03-15 16:54:52 [INFO] Prompt ID: d368dd9d-f99b-4fe7-95b2-76ec52a78151
+2025-03-15 16:54:52 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 16:54:52 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 16:54:52 [INFO] Executing Step 1: CacheLookup
+2025-03-15 16:54:52 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 16:54:52 [INFO] Using prompt: <dataframe>
+dfs[0]:100x4
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion
+6,2019-06-26,91930004,Alergia a la picadura de abeja
+3,2017-12-15,300914000,Alergia al látex
+18,2023-08-27,91933007,Alergia al polen
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ dime la alergia más comun
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 16:54:52 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 16:54:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-15 16:54:53 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-15 16:56:48 [INFO] Question: clear
+2025-03-15 16:56:48 [INFO] Running PandasAI with openai LLM...
+2025-03-15 16:56:48 [INFO] Prompt ID: 2bfa96b4-5f87-47e3-b9d5-7fa58c6d7d66
+2025-03-15 16:56:48 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 16:56:48 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 16:56:48 [INFO] Executing Step 1: CacheLookup
+2025-03-15 16:56:48 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 16:56:48 [INFO] Using prompt: <dataframe>
+dfs[0]:100x4
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion
+6,2019-06-26,91930004,Alergia a la picadura de abeja
+3,2017-12-15,300914000,Alergia al látex
+18,2023-08-27,91933007,Alergia al polen
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ clear
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 16:56:48 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 16:56:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-15 16:56:49 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-15 16:56:50 [INFO] Question: salit
+2025-03-15 16:56:50 [INFO] Running PandasAI with openai LLM...
+2025-03-15 16:56:50 [INFO] Prompt ID: 2ec4e3da-78bc-4142-a66a-45b11ff9d925
+2025-03-15 16:56:50 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 16:56:50 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 16:56:50 [INFO] Executing Step 1: CacheLookup
+2025-03-15 16:56:50 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 16:56:50 [INFO] Using prompt: <dataframe>
+dfs[0]:100x4
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion
+6,2019-06-26,91930004,Alergia a la picadura de abeja
+3,2017-12-15,300914000,Alergia al látex
+18,2023-08-27,91933007,Alergia al polen
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ salit
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 16:56:50 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 16:56:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-15 16:56:50 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-15 16:56:59 [INFO] Question: hola
+2025-03-15 16:56:59 [INFO] Running PandasAI with openai LLM...
+2025-03-15 16:56:59 [INFO] Prompt ID: f2fd0d9b-a1b3-4aab-a1bc-9544f6fca6e9
+2025-03-15 16:56:59 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 16:56:59 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 16:56:59 [INFO] Executing Step 1: CacheLookup
+2025-03-15 16:56:59 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 16:56:59 [INFO] Using prompt: <dataframe>
+dfs[0]:100x4
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion
+25,2023-02-20,300913006,Alergia a la aspirina
+10,2016-01-22,91932006,Alergia al polen
+21,2019-12-13,91933007,Alergia a la picadura de abeja
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ hola
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 16:56:59 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 16:56:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-15 16:56:59 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-VNCYD*************8dPw. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-15 17:17:35 [INFO] Question: ¿Cuál es la edad promedio de las personas en el DataFrame?
+2025-03-15 17:17:36 [INFO] Running PandasAI with bamboo_llm LLM...
+2025-03-15 17:17:36 [INFO] Prompt ID: 4aa29677-daa1-49ae-8cf1-813a9a5e7a30
+2025-03-15 17:17:36 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 17:17:36 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 17:17:36 [INFO] Executing Step 1: CacheLookup
+2025-03-15 17:17:36 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 17:17:36 [INFO] Querying without using training data.
+2025-03-15 17:17:36 [INFO] Querying without using training docs.
+2025-03-15 17:17:36 [INFO] Using prompt: <dataframe>
+dfs[0]:3x3
+name,age,city
+Alice,25,New York
+Charlie,35,Chicago
+Bob,30,Los Angeles
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ ¿Cuál es la edad promedio de las personas en el DataFrame?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 17:17:36 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 17:17:37 [ERROR] Pipeline failed on step 3: Something went wrong unable to generate llm response!
+2025-03-15 17:18:32 [INFO] Question: ¿Cuál es la edad promedio de las personas en el DataFrame?
+2025-03-15 17:18:32 [INFO] Running PandasAI with bamboo_llm LLM...
+2025-03-15 17:18:32 [INFO] Prompt ID: f5f51c7a-e2ce-4f94-8cc1-68a3a384e8ba
+2025-03-15 17:18:32 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 17:18:32 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 17:18:32 [INFO] Executing Step 1: CacheLookup
+2025-03-15 17:18:32 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 17:18:33 [INFO] Querying without using training data.
+2025-03-15 17:18:33 [INFO] Querying without using training docs.
+2025-03-15 17:18:33 [INFO] Using prompt: <dataframe>
+dfs[0]:3x3
+name,age,city
+Bob,30,Los Angeles
+Charlie,35,Chicago
+Alice,25,New York
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ ¿Cuál es la edad promedio de las personas en el DataFrame?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 17:18:33 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 17:18:33 [ERROR] Request failed: Traceback (most recent call last):
+  File "C:\Users\mipc\Desktop\universidad\2do\2docuatri\hackaton\myenv\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mipc\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mipc\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mipc\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mipc\Desktop\universidad\2do\2docuatri\hackaton\myenv\Lib\site-packages\pandasai\helpers\request.py", line 69, in make_request
+    data = response.json()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\mipc\Desktop\universidad\2do\2docuatri\hackaton\myenv\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-03-15 17:18:33 [ERROR] Pipeline failed on step 3: Request failed: Expecting value: line 1 column 1 (char 0)
+2025-03-15 17:21:14 [INFO] Question: ¿Cuál es la edad promedio de las personas en el DataFrame?
+2025-03-15 17:21:14 [INFO] Running PandasAI with bamboo_llm LLM...
+2025-03-15 17:21:14 [INFO] Prompt ID: 6b7861e1-2f4b-4641-a89c-cf518bc0bf36
+2025-03-15 17:21:14 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-03-15 17:21:14 [INFO] Executing Step 0: ValidatePipelineInput
+2025-03-15 17:21:14 [INFO] Executing Step 1: CacheLookup
+2025-03-15 17:21:14 [INFO] Executing Step 2: PromptGeneration
+2025-03-15 17:21:14 [INFO] Querying without using training data.
+2025-03-15 17:21:14 [ERROR] Request failed: Traceback (most recent call last):
+  File "C:\Users\mipc\Desktop\universidad\2do\2docuatri\hackaton\myenv\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mipc\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mipc\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mipc\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mipc\Desktop\universidad\2do\2docuatri\hackaton\myenv\Lib\site-packages\pandasai\helpers\request.py", line 69, in make_request
+    data = response.json()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\mipc\Desktop\universidad\2do\2docuatri\hackaton\myenv\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-03-15 17:21:14 [INFO] Querying without using training docs.
+2025-03-15 17:21:14 [INFO] Using prompt: <dataframe>
+dfs[0]:3x3
+name,age,city
+Alice,25,New York
+Charlie,35,Chicago
+Bob,30,Los Angeles
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ ¿Cuál es la edad promedio de las personas en el DataFrame?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-03-15 17:21:14 [INFO] Executing Step 3: CodeGenerator
+2025-03-15 17:21:15 [ERROR] Pipeline failed on step 3: Something went wrong unable to generate llm response!
