@@ -1,3 +1,4 @@
+import os
 from faker import Faker
 import random
 import csv
@@ -28,16 +29,23 @@ def generar_datos_sinteticos(numero_de_registros):
         datos.append([paciente_id, fecha_diagnostico, codigo_snomed, descripcion])
     return datos
 
-# Guardar los datos en un archivo CSV
-def guardar_en_csv(datos, nombre_archivo):
-    with open(nombre_archivo, mode='w', newline='', encoding='utf-8') as archivo:
+# Guardar los datos en un archivo CSV en una carpeta específica
+def guardar_en_csv(datos, nombre_carpeta, nombre_archivo):
+    # Crear la carpeta si no existe
+    if not os.path.exists(nombre_carpeta):
+        os.makedirs(nombre_carpeta)
+    # Ruta completa del archivo
+    ruta_archivo = os.path.join(nombre_carpeta, nombre_archivo)
+    # Guardar los datos en el archivo
+    with open(ruta_archivo, mode='w', newline='', encoding='utf-8') as archivo:
         escritor = csv.writer(archivo)
         escritor.writerow(["PacienteID", "Fecha_diagnostico", "Codigo_SNOMED", "Descripcion"])
         escritor.writerows(datos)
+    print(f"Archivo guardado en: {ruta_archivo}")
 
 # Generar y guardar los datos
 numero_de_registros = 100  # Ajusta el número de registros que desees generar
 datos_sinteticos = generar_datos_sinteticos(numero_de_registros)
-guardar_en_csv(datos_sinteticos, "datos_sinteticos.csv")
+guardar_en_csv(datos_sinteticos, "Datos sintéticos reto 2", "datos_sinteticos.csv")
 
-print(f"Se han generado {numero_de_registros} registros sintéticos y guardado en 'datos_sinteticos.csv'.")
+print(f"Se han generado {numero_de_registros} registros sintéticos y guardado en la carpeta 'Datos sintéticos reto 2'.")
