@@ -1,5 +1,5 @@
 openai
-numpy==1.23.2
+numpy==1.26.0
 pandas==1.5.3
 pandasai==2.4.2
 faker==37.0.0
