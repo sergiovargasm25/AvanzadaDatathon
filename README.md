@@ -17,3 +17,7 @@ Linux
 ```Bash
 source myenv/bin/activate
 ```
+Para la ejecución hacer
+```Bash
+python gui.py
+```
