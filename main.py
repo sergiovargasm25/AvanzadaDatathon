@@ -41,37 +41,35 @@ for archivo in archivos_csv:
 # Fusionar los datos en un único DataFrame (opcional, si son combinables)
 datos_combinados = pd.concat(datos_csv.values(), axis=0, ignore_index=True)
 
-# Mostrar información de los datos cargados
-print("\nDatos cargados:")
-for nombre, df in datos_csv.items():
-    print(f"{nombre} - {len(df)} registros")
-print("\nTotal de registros combinados:", len(datos_combinados))
-
-# Crear un contexto basado en los datos combinados (ejemplo básico)
+# Crear un contexto basado en los datos combinados
 contexto = []
 for _, row in datos_combinados.iterrows():
     columnas = ", ".join([f"{key}: {value}" for key, value in row.items()])
     contexto.append(f"Registro - {columnas}")
 
-# Simulación de envío de datos al modelo
-mensajes = [{"role": "system", "content": "Eres un asistente que analiza datos médicos cargados de múltiples CSV."}]
-mensajes.append({"role": "user", "content": "\n".join(contexto[:200])})  # Solo los primeros 200 registros para prueba
+# Variable de memoria para almacenar las interacciones previas
+memoria = []
 
-# Interfaz con el usuario
-print("\n:small_blue_diamond: Datos listos. Escribe tus consultas o usa 'responder' para enviar al modelo. ('salir' para salir)\n")
-while True:
-    prompt = input("> ")
-    if prompt.lower() == "salir":
-        print(":wave: ¡Hasta luego!")
-        break
-    if prompt.lower() == "responder":
-        print("\n:speech_balloon: Generando respuesta...\n")
-        response = client.chat.completions.create(
-            model="bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0",
-            messages=mensajes
-        )
-        print(":robot: Asistente:", response.choices[0].message.content)
-        continue
+# Función para responder las consultas
+def obtener_respuesta(usuario_input):
+    # Agregar la consulta del usuario a la memoria
+    memoria.append({"role": "user", "content": usuario_input})
+    
+    mensajes = [{"role": "system", "content": "Eres un asistente que analiza datos médicos cargados de múltiples CSV."}]
+    mensajes.append({"role": "user", "content": "\n".join(contexto[:200])})  # Solo los primeros 200 registros para prueba
+    
+    # Agregar la memoria de interacciones previas
+    mensajes.extend(memoria)
 
-    # Añadir la consulta del usuario como mensaje
-    mensajes.append({"role": "user", "content": prompt})
+    # Obtener la respuesta del modelo
+    response = client.chat.completions.create(
+        model="bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0",
+        messages=mensajes
+    )
+
+    respuesta = response.choices[0].message.content
+    
+    # Agregar la respuesta del modelo a la memoria
+    memoria.append({"role": "assistant", "content": respuesta})
+    
+    return respuesta
