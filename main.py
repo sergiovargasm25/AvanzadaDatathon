@@ -4,14 +4,14 @@ import openai
 
 # Cargar variables de entorno
 load_dotenv()
-openai_api_key = os.getenv("OPENAI_API_KEY")
+Bedrock_api_key = os.getenv("API_KEY")
 
 # Verificar si la clave API está configurada
-if openai_api_key is None:
+if Bedrock_api_key is None:
     raise ValueError("No se encontró la clave de API de OpenAI. Asegúrate de que esté configurada como una variable de entorno.")
 
 # Crear cliente de OpenAI con el modelo que sí tienes acceso
-client = openai.OpenAI(api_key=openai_api_key, base_url="https://litellm.dccp.pbu.dedalus.com")
+client = openai.OpenAI(api_key=Bedrock_api_key, base_url="https://litellm.dccp.pbu.dedalus.com")
 
 print("\n:small_blue_diamond: Escribe tus consultas una por una. Cuando quieras recibir la respuesta, escribe 'responder'.")
 print(":small_blue_diamond: Para salir, escribe 'salir'.\n")
