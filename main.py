@@ -56,7 +56,7 @@ def obtener_respuesta(usuario_input):
     memoria.append({"role": "user", "content": usuario_input})
     
     mensajes = [{"role": "system", "content": "Eres un asistente que analiza datos médicos cargados de múltiples CSV. Analiza el contexto de la conversación y sugiere preguntas que puedan guiar la exploración de datos, identificar patrones o refinar la búsqueda de cohortes de pacientes. Asegúrate de que las preguntas propuestas sean relevantes para los datos y útiles para la investigación."}]
-    mensajes.append({"role": "user", "content": "\n".join(contexto[:300])})  # Solo los primeros 300 registros para prueba
+    mensajes.append({"role": "user", "content": "\n".join(contexto[:200])})  # Solo los primeros 200 registros para prueba
     
     # Agregar la memoria de interacciones previas
     mensajes.extend(memoria)
