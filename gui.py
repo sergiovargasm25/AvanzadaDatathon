@@ -26,7 +26,7 @@ text_entrada.pack(pady=5)
 label_resultado = tk.Label(ventana, text="Resultado:")
 label_resultado.pack(pady=5)
 
-text_resultado = scrolledtext.ScrolledText(ventana, width=70, height=10)
+text_resultado = scrolledtext.ScrolledText(ventana, width=200, height=10)
 text_resultado.pack(pady=5)
 
 # Botón para enviar la consulta
