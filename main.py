@@ -2,6 +2,7 @@ import os
 import pandas as pd
 from dotenv import load_dotenv
 import openai
+from generargraficos import generar_grafico  # Importamos la función de gráficos
 
 # Cargar variables de entorno
 load_dotenv()
@@ -11,7 +12,7 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 if openai_api_key is None:
     raise ValueError("No se encontró la clave de API de OpenAI. Asegúrate de que esté configurada como una variable de entorno.")
 
-# Crear cliente de OpenAI con el modelo que tengas acceso
+# Crear cliente de OpenAI
 client = openai.OpenAI(api_key=openai_api_key, base_url="https://litellm.dccp.pbu.dedalus.com")
 
 # Ruta de la carpeta con los CSV
@@ -52,10 +53,17 @@ memoria = []
 
 # Función para responder las consultas
 def obtener_respuesta(usuario_input):
-    # Agregar la consulta del usuario a la memoria
+    # Intentar generar un gráfico primero
+    respuesta_grafico = generar_grafico(usuario_input)
+    
+    # Si se generó un gráfico, devolver la respuesta correspondiente
+    if respuesta_grafico is not None:
+        return respuesta_grafico
+    
+    # Si no es una consulta de gráfico, usar la API de OpenAI para responder
     memoria.append({"role": "user", "content": usuario_input})
     
-    mensajes = [{"role": "system", "content": "Eres un asistente que analiza datos médicos cargados de múltiples CSV. Analiza el contexto de la conversación y sugiere preguntas que puedan guiar la exploración de datos, identificar patrones o refinar la búsqueda de cohortes de pacientes. Asegúrate de que las preguntas propuestas sean relevantes para los datos y útiles para la investigación."}]
+    mensajes = [{"role": "system", "content": "Eres un asistente que analiza datos médicos cargados de múltiples CSV. Además de que cada párrafo debes terminarlo sugiriendo una pregunta en relación con el resto de la conversación."}]
     mensajes.append({"role": "user", "content": "\n".join(contexto[:200])})  # Solo los primeros 200 registros para prueba
     
     # Agregar la memoria de interacciones previas
