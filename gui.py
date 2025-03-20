@@ -22,18 +22,32 @@ def enviar_consulta():
 def mostrar_imagen(nombre_archivo):
     if os.path.exists(nombre_archivo):
         img = Image.open(nombre_archivo)
-        img = img.resize((600, 400), Image.Resampling.LANCZOS)  # Ajustar tamaño de la imagen
+
+        # Obtener el tamaño real de la imagen
+        ancho_original, alto_original = img.size
+
+        # Definir un tamaño máximo para mostrar
+        max_ancho, max_alto = 800, 500  # Ajusta según necesidad
+
+        # Calcular la escala manteniendo la proporción
+        ratio = min(max_ancho / ancho_original, max_alto / alto_original)
+        nuevo_ancho = int(ancho_original * ratio)
+        nuevo_alto = int(alto_original * ratio)
+
+        img = img.resize((nuevo_ancho, nuevo_alto), Image.Resampling.LANCZOS)  # Redimensionar con buena calidad
         img = ImageTk.PhotoImage(img)
 
-        panel.config(image=img)
+        # Ajustar el tamaño del panel y mostrar la imagen
+        panel.config(image=img, width=nuevo_ancho, height=nuevo_alto)
         panel.image = img
     else:
         text_resultado.insert(tk.END, "\nError: No se pudo cargar la imagen.")
 
+
 # Configuración de la ventana principal
 ventana = tk.Tk()
 ventana.title("Asistente Inteligente")
-ventana.geometry("1000x800")  # Ventana más grande
+ventana.geometry("1000x900")  # Ventana más grande
 
 # Entrada de texto
 label_entrada = tk.Label(ventana, text="Escribe tu consulta:")
