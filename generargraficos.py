@@ -2,13 +2,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
-import glob
 from dotenv import load_dotenv
 
 # Cargar variables de entorno (.env)
 load_dotenv()
-
-
 
 def cargar_csvs():
     # Cargar datos de todos los archivos en un diccionario
@@ -36,7 +33,10 @@ def cargar_csvs():
 
     # Fusionar los datos en un único DataFrame (opcional, si son combinables)
     datos_combinados = pd.concat(datos_csv.values(), axis=0, ignore_index=True)
+    return datos_combinados
 
+# Cargar los datos al inicio
+df = cargar_csvs()
 
 def generar_grafico(consulta):
     # Generar histograma
@@ -68,4 +68,3 @@ def generar_grafico(consulta):
     # Si no se entiende la consulta
     else:
         return None  # Devolver None si no es una consulta de gráfico
-df = cargar_csvs()
