@@ -8,17 +8,35 @@ from dotenv import load_dotenv
 # Cargar variables de entorno (.env)
 load_dotenv()
 
-# 📂 Carpeta donde están los CSVs (corregida)
-CARPETA_CSV = r"C:\Users\sergi\Downloads\AvanzadaDatathon\Datos sintéticos reto 2"
 
-def cargar_csvs(carpeta):
-    archivos = glob.glob(os.path.join(carpeta, "*.csv"))  # Encuentra todos los CSV
-    df_list = [pd.read_csv(archivo) for archivo in archivos]  # Cargar cada CSV
-    df_final = pd.concat(df_list, ignore_index=True)  # Unir todos los CSV
-    return df_final
 
-# Cargar todos los CSVs
-df = cargar_csvs(CARPETA_CSV)
+def cargar_csvs():
+    # Cargar datos de todos los archivos en un diccionario
+    carpeta_csv = "Datos sintéticos reto 2"
+
+    # Lista de archivos CSV a cargar
+    archivos_csv = [
+        "cohorte_alegias.csv",
+        "cohorte_condiciones.csv",
+        "cohorte_encuentros.csv",
+        "cohorte_medicationes.csv",
+        "cohorte_pacientes.csv",
+        "cohorte_procedimientos.csv",
+        "datos_sinteticos.csv"
+    ]
+
+    datos_csv = {}
+    for archivo in archivos_csv:
+        ruta_archivo = os.path.join(carpeta_csv, archivo)
+        if os.path.exists(ruta_archivo):
+            print(f"Cargando datos desde: {ruta_archivo}")
+            datos_csv[archivo] = pd.read_csv(ruta_archivo)
+        else:
+            print(f"Archivo no encontrado: {ruta_archivo}")
+
+    # Fusionar los datos en un único DataFrame (opcional, si son combinables)
+    datos_combinados = pd.concat(datos_csv.values(), axis=0, ignore_index=True)
+
 
 def generar_grafico(consulta):
     # Generar histograma
@@ -50,3 +68,4 @@ def generar_grafico(consulta):
     # Si no se entiende la consulta
     else:
         return None  # Devolver None si no es una consulta de gráfico
+df = cargar_csvs()
