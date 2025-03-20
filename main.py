@@ -71,5 +71,7 @@ def obtener_respuesta(usuario_input):
     
     # Agregar la respuesta del modelo a la memoria
     memoria.append({"role": "assistant", "content": respuesta})
-    
+    with open("memoria.txt", "w", encoding="utf-8") as archivo:
+        for mensaje in memoria:
+            archivo.write(f"{mensaje['role']}: {mensaje['content']}\n")
     return respuesta
